@@ -25,7 +25,7 @@ class Boa(AnimalExotico):
         Valida que el valor enviado corresponda al tipo de dato del atributo
         """ 
         if isinstance(value, int):
-            if value > 10:
+            if value > 20: #La guardería ha decretado que el límite de ratones para la boa ahora será de 20.
                 raise ValueError('Demasiados Ratones!')
             self.__ratones_comidos = value
         else:
