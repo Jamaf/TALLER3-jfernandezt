@@ -13,11 +13,11 @@ class TestBoa(unittest.TestCase):
         self.assertEqual(self.my_boa.calcular_flete(), 165)
 
     def test_agregar_raton(self):
-        self.my_boa.agregar_raton(3)
-        self.my_boa.agregar_raton(3)
-        self.assertEqual(self.my_boa.ratones_comidos, 6)
+        self.my_boa.agregar_raton(8)
+        self.my_boa.agregar_raton(8)
+        self.assertEqual(self.my_boa.ratones_comidos, 16)
         self.my_boa.agregar_raton(4)
-        self.assertEqual(self.my_boa.ratones_comidos, 10)
+        self.assertEqual(self.my_boa.ratones_comidos, 20)
         with self.assertRaises(ValueError):
             self.my_boa.agregar_raton(1)
 

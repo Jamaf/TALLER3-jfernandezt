@@ -14,11 +14,11 @@ class TestGuarderia(unittest.TestCase):
         my_guarderia = Guarderia(my_boa, my_boa2, my_huron, my_huron2)
 
         #se pone la boa al limite de ratones la boa2
-        for i in range(10):
+        for i in range(20):
             my_guarderia.alimentar_boa(my_boa2)
 
         #validamos que efectivamente se haya comido los 10
-        self.assertEqual(my_boa2.ratones_comidos, 10)
+        self.assertEqual(my_boa2.ratones_comidos, 20)
 
         resultado = my_guarderia.alimentar_boa(my_boa2)
         self.assertEqual(resultado, 'La boa está llena')
